@@ -172,6 +172,20 @@
       line-height: 22px
       padding: 0 10px
 
+  .cases
+    &__item
+      margin-bottom: 50px
+    &__data
+      padding-left: 0
+      padding-right: 0
+    &__btn-more
+      margin-top: 10px
+
+  .data
+    margin-bottom: -40px
+    &__item
+      margin-bottom: 40px
+
 @media screen and (max-width: 1080px)
   .socials
     &__item
@@ -470,3 +484,87 @@
     &__title
       text-align: center
       border-bottom: none
+
+  .cases
+    &__img
+      height: 250px
+      margin-bottom: 25px
+
+  .data
+    &__item
+      width: 100%
+      margin-bottom: 20px
+    &__title
+      font-size: 18px
+    &__icon
+      margin-right: 10px
+    &__body
+      padding-left: 28px
+    &__text
+      font-size: 16px
+      ul
+        li
+          padding-left: 15px
+          &::before
+            width: 6px
+            height: 6px
+
+  .reviews
+    padding-bottom: 50px
+    &__title
+      font-size: 32px
+      margin-bottom: 25px
+      strong
+        font-size: 40px
+        display: block
+    &__wrap
+      overflow: visible
+    &__list
+      // overflow: hidden
+    &__img
+      height: 280px
+    &__arrow
+      width: 40px
+      height: 40px
+      padding: 12px
+      margin-top: -20px
+      &.swiper-button-prev
+        left: -10px
+      &.swiper-button-next
+        right: -10px
+    &__pagination
+      .swiper-pagination-bullet
+        width: 10px
+        height: 10px
+
+  .order
+    &__subtitle
+      font-size: 18px
+      line-height: 24px
+    &__policy
+      br
+        display: none
+
+  .footer
+    &__title
+      font-size: 18px
+    &__policy
+      font-size: 14px
+      line-height: 21px
+
+  .modal
+    padding: 20px !important
+    &__title
+      font-size: 21px
+      margin-bottom: 15px
+
+@media screen and (max-width: 500px)
+  .cases
+    &__img
+      height: 200px
+
+@media screen and (max-width: 450px)
+  .cases
+    &__img
+      height: 150px
+      border-radius: 10px

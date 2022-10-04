@@ -211,6 +211,24 @@
     line-height: 22px;
     padding: 0 10px;
   }
+
+  .cases__item {
+    margin-bottom: 50px;
+  }
+  .cases__data {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cases__btn-more {
+    margin-top: 10px;
+  }
+
+  .data {
+    margin-bottom: -40px;
+  }
+  .data__item {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 1080px) {
   .socials__item {
@@ -584,5 +602,103 @@
   .clients__title {
     text-align: center;
     border-bottom: none;
+  }
+
+  .cases__img {
+    height: 250px;
+    margin-bottom: 25px;
+  }
+
+  .data__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .data__title {
+    font-size: 18px;
+  }
+  .data__icon {
+    margin-right: 10px;
+  }
+  .data__body {
+    padding-left: 28px;
+  }
+  .data__text {
+    font-size: 16px;
+  }
+  .data__text ul li {
+    padding-left: 15px;
+  }
+  .data__text ul li::before {
+    width: 6px;
+    height: 6px;
+  }
+
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .reviews__title strong {
+    font-size: 40px;
+    display: block;
+  }
+  .reviews__wrap {
+    overflow: visible;
+  }
+  .reviews__img {
+    height: 280px;
+  }
+  .reviews__arrow {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    margin-top: -20px;
+  }
+  .reviews__arrow.swiper-button-prev {
+    left: -10px;
+  }
+  .reviews__arrow.swiper-button-next {
+    right: -10px;
+  }
+  .reviews__pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .order__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .order__policy br {
+    display: none;
+  }
+
+  .footer__title {
+    font-size: 18px;
+  }
+  .footer__policy {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .modal {
+    padding: 20px !important;
+  }
+  .modal__title {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cases__img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cases__img {
+    height: 150px;
+    border-radius: 10px;
   }
 }
