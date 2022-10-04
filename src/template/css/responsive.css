@@ -1071,8 +1071,42 @@
     line-height: 26px;
   }
 
+  .whom__title {
+    margin-bottom: 35px;
+  }
+  .whom__item {
+    max-width: 50%;
+  }
+  .whom__img {
+    height: 160px;
+  }
+  .whom__name {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .cases__img {
     height: 150px;
     border-radius: 10px;
+  }
+
+  .services__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .services__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .services__name {
+    max-width: calc(100% - 45px);
+    text-align: left;
+    font-size: 20px;
+    padding-left: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .we__authors {
+    gap: 0px;
   }
 }
