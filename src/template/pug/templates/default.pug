@@ -10,14 +10,13 @@ html(lang="ru")
 		.wrap
 			link(rel="stylesheet" href="template/css/style.css" + version)
 
-			+style('header', 'blocks')
 			include ../../blocks/header/header
-			+script('header', 'blocks')
 			
 			main.main
 				block content
 
-			+style('footer', 'blocks')
 			include ../../blocks/footer/footer
 
+			+script('field', 'components')
+			<script src="https://unpkg.com/imask"></script>
 			script(src="template/js/common.js" + version)

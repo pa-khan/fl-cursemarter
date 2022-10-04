@@ -1,10 +1,313 @@
 extends ../../templates/default
 block vars
 	-
-		title = "Главная страница"
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+		title = "КурсМастер - Методическое агентство"
 block content
-	
+	.intro
+		.case
+			.intro__wrap.row
+				.intro__content
+					.intro__title.h1 СОЗДАЕМ КУРСЫ, КОТОРЫЕ <br>СТУДЕНТЫ ПРОХОДЯТ <br>ДО КОНЦА И РЕКОМЕНДУЮТ
+					form.intro__form
+						.intro__field.field.--md.--b-gray.--round.--phone.--required
+							.field__wrap
+								input.field__area(type="tel" name="phone" placeholder="Номер телефона")
+						button.intro__btn-submit.button.--md.--bg-gold.--round
+							.button__text Оставить заявку
+						.intro__policy *Нажимая на кнопку, Вы даете согласие <br>на обработку своих персональных данных
+					.intro__clients.clients
+						.clients__title Наши клиенты:
+						.clients__list.row
+							.clients__item
+								img(src="uploads/like-center-logo.png" alt="")
+							.clients__item
+								img(src="uploads/school-tatyana-maricheva-logo.png" alt="")
+							.clients__item
+								img(src="uploads/tech-blog-logo.png" alt="")
+
+				.intro__imgs
+					.intro__vadim
+						img(src="uploads/vadim.png" alt="")
+					.intro__ruslan
+						img(src="uploads/ruslan.png" alt="")
+					.intro__bg
+						img(src="uploads/intro-bg.png" alt="")
+
+	.whom
+		.case
+			.whom__title.h2 КОМУ ОКАЗЫВАЕМ УСЛУГИ
+			.whom__list.row
+				.whom__item
+					.whom__img
+						img(src="uploads/service-prod.png" alt="")
+					.whom__name Продюсеру
+				.whom__item
+					.whom__img
+						img(src="uploads/service-expert.png" alt="")
+					.whom__name Эксперту
+
+	.services
+		.case
+			.services__title.h2 ЧТО МОЖЕМ СДЕЛАТЬ
+			.services__list.row
+				.services__item
+					.services__icon
+						img(src="uploads/magniffic-glass.svg" alt="")
+					.services__name.h4 Аудит курса
+					.services__text Проверим курс на <br> методические ошибки.  <br> Дадим инструкцию из <br> 70 параметров, <br> которая поможет вывести <br> курс на новый уровень.
+				.services__item
+					.services__icon
+						img(src="uploads/check.svg" alt="")
+					.services__name.h4 Доработка курса
+					.services__text Сделаем ваш курс лидером <br> в своей нише по качеству <br> и результативности. Студенты <br> пройдут его до конца и <br> запустят «Сарафанное радио».
+				.services__item
+					.services__icon
+						img(src="uploads/write.svg" alt="")
+					.services__name.h4 Разработка курса с нуля
+					.services__text Создадим полноценный курс <br> на основе знаний и опыта <br> любого эксперта. Мы знаем, <br> как "распаковать" экспертизу <br> и сделать из нее <br> обучающую программу.
+
+	.audit#audit
+		.case
+			.audit__title.h2 АУДИТ КУРСА
+			.audit__desc.desc Аудит нужен, чтобы найти методические <br> ошибки, из-за которых ваш курс проседает
+			.audit__steps.steps
+				.steps__title.h3 Что сделаем
+				.steps__list.row
+					.steps__item
+						.steps__name 
+							p Зайдем на учебную <br>платформу курса
+						.steps__count 1
+					.steps__item
+						.steps__name 
+							p Проанализируем курс <br> по 70 методическим <br>параметрам
+						.steps__count 2
+					.steps__item
+						.steps__name 
+							p По итогам анализа <br> проведем встречу <br> в формате Zoom/Skype
+						.steps__count 3
+					.steps__item
+						.steps__name 
+							p Предоставим документы <br>с подробным описанием <br>результатов
+						.steps__count 4
+
+			.audit__result.result
+				.result__title.h3 Результат работ
+				.result__wrap Узнаете, над чем нужно провести работу, чтобы сделать программу более эффективной, <br> повысить доходимость, LTV и NPS. Вы получите документы с подробным анализом <br> курса. Опираясь на них вы сможете провести доработку самостоятельно, или пригласить <br>специалистов для решения конкретных задач.
+
+			.audit__btn-search.button.--lg.--bg-black.--round
+				.button__text Найдите своих коллег, которые заказывали аудит
+				.button__icon
+					img(src="uploads/magniffic-glass-bold.svg" alt="")
+					img(src="uploads/arrow.svg" alt="")
+
+	.consult
+		.case
+			.consult__title.h3 Оставить заявку на консультацию
+			.consult__subtitle На консультации обсудим ваши задачи и подробно расскажем о технологии нашей работы
+			form.consult__form
+				.consult__field.field.--lgg.--b-white.--round.--phone.--required
+					.field__wrap
+						input.field__area(type="tel" name="phone" placeholder="Номер Телефона")
+				button.consult__btn.button.--lgg.--bg-gold.--round
+					.button__text Оставить заявку
+				.consult__policy *Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных
+		.consult__bg
+			img(src="uploads/consult-1-bg.jpg" alt="")
+
+
+	.revision#revision
+		.case
+			.revision__title.h2 ДОРАБОТКА КУРCА
+			.revision__desc.desc Услуга нужна тем, кто хочет вывести <br> существующий курс на новый уровень
+			.revision__do.do
+				.do__title.h3 Что сделаем
+				.do__list.row
+					.do__item
+						.do__icon
+							img(src="uploads/job-interview.svg" alt="")
+						.do__name.h4 Проведем интервью <br>со студентами
+						.do__text Соберем обратную <br> связь с учеников об их <br> взаимодействии с курсом
+					.do__item
+						.do__icon
+							img(src="uploads/hierarchical-structure.svg" alt="")
+						.do__name.h4 Доработаем <br> структуру курса
+						.do__text Сформируем структуру, <br> которая будет отвечать <br> всем методическим <br> требованиям
+					.do__item
+						.do__icon
+							img(src="uploads/script.svg" alt="")
+						.do__name.h4 Напишем сценарии <br> каждого урока и модуля
+						.do__text Напишем сценарии для видео, <br> подготовим текстовые блоки <br>и дополнительные материалы
+					.do__item
+						.do__icon
+							img(src="uploads/presentation.svg" alt="")
+						.do__name.h4 Проработаем <br>презентации
+						.do__text Оптимизируем презентации, <br> проведем работу <br>со смыслами
+					.do__item
+						.do__icon
+							img(src="uploads/jigsaw.svg" alt="")
+						.do__name.h4 Спроектируем <br>геймификацию
+						.do__text Разработаем или поможем <br>докрутить систему игровых <br>методов в обучении
+					.do__item
+						.do__icon
+							img(src="uploads/contract.svg" alt="")
+						.do__name.h4 Доработаем <br>практические задания
+						.do__text Проведем работу над <br>основными заданиями, <br>подготовим дополнительные
+
+			.revision__result.result
+				.result__title.h3 Результат работ
+				.result__wrap Вы получите детально проработанные сценарии каждого урока. <br> После их реализации ваш курс начнет продавать себя сам: <br> — Повысятся основные показатели: доходимость, повторные продажи, <br> количество позитивных отзывов <br> — Появятся успешные кейсы учеников, которые одновременно упростят продажи и помогут замотивировать других студентов
+
+		.revision__bg
+			img(src="uploads/revision-bg.png")
+
+
+	.scratch#scratch
+		.case
+			.scratch__title.h2 РАЗРАБОТКА КУРСА С НУЛЯ
+			.scratch__desc.desc Услуга нужна тем, кто хочет создать новый курс, <br> который станет лидером рынка
+			.scratch__list.list
+				.list__title.h3 Что сделаем
+				.list__elems
+					.list__elem
+						.list__elem-count 1
+						.list__elem-text Проведем интервью с экспертом (4-10) для извлечения смыслов
+					.list__elem
+						.list__elem-count 2
+						.list__elem-text Разрабатываем проект курса, который включает в себя:
+			.scratch__text.text
+				ul
+					li Подробную структуру курса, <br> модулей, уроков
+					li Сформулированные практические задания 
+					li Тезисные сценарии для каждого урока для использования экспертом на съемках
+					li Системы геймификации <br>и мотивации студентов
+
+				ul
+					li Сценарии дополнительных активностей в курсе
+					li Дополнительные материалы программы
+					li Систему работы кураторов и наставников
+					li Систему сбора обратной связи
+			.scratch__result.result
+				.result__title.h3 Результат работ
+				.result__wrap Готовый проект курса — детально проработанное ТЗ в виде схем, документов и таблиц. <br>С ними вы сможете записать и выложить курс на платформу, как по по инструкции
+
+	.consult
+		.case
+			.consult__title.h3 Оставить заявку на консультацию
+			.consult__subtitle На консультации обсудим ваши задачи и подробно расскажем о технологии нашей работы
+			form.consult__form
+				.consult__field.field.--lgg.--b-white.--round.--phone.--required
+					.field__wrap
+						input.field__area(type="tel" name="phone" placeholder="Номер Телефона")
+				button.consult__btn.button.--lgg.--bg-gold.--round
+					.button__text Оставить заявку
+				.consult__policy *Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных
+		.consult__bg.--animation
+			img(src="uploads/animation.gif" alt="")
+			img(src="uploads/animation.gif" alt="")
+
+
+	.we
+		.case
+			.we__wrap
+				.we__title.h2 кто разработает <br>онлайн-курс
+				.we__list.row
+					.we__item
+						.we__name #[strong 100] <br>онлайн-школ
+						.we__text которым помогли выстроить эффективное онлайн-обучение
+					.we__item
+						.we__name #[strong 100 000] <br>человек
+						.we__text прошли курсы, над которыми мы работали
+					.we__item
+						.we__name #[strong 50] <br>экспертов
+						.we__text знания которых упаковали в программу обучения
+					.we__item
+						.we__name #[strong 68%] <br>доходимость
+						.we__text в среднем по курсам, которые мы разрабатывали
+					.we__item
+						.we__name #[strong 10 000] <br>практических заданий
+						.we__text разработали для онлайн-курсов
+					.we__item
+						.we__name #[strong СБЕР, РЖД, ТЕЛЕ2]
+						.we__text компании, для которых наши методисты разрабатывали корпоративные курсы
+			.we__authors
+				.we__author
+					.we__author-name ВАДИМ АЛИЕВ
+					.we__author-img
+						img(src="uploads/vadim.png" alt="")
+				.we__author
+					.we__author-name РУСЛАН БАВШИН
+					.we__author-img
+						img(src="uploads/ruslan.png" alt="")
+
+	.cases
+		.case
+			.cases__title.h2 КОМУ УЖЕ РАЗРАБОТАЛИ КУРС
+			.cases__list
+				.cases__item
+					.cases__img
+						img(src="uploads/school-prod-poster.jpg" alt="")
+					.cases__data.data
+						.data__item.--full
+							.data__head
+								.data__icon
+								.data__title.--bb Услуга:
+							.data__body
+								.data__text
+									p Доработка курса (7-й, 8-й, 9-й, 10-й, 11-й и 12-й поток)
+						.data__item
+							.data__head
+								.data__icon
+									img(src="uploads/tools.png" alt="")
+								.data__title Что сделали:
+							.data__body
+								.data__text
+									ul
+										li Доработали структуру
+										li Переработали практические задания, разработали новые
+										li Доработали систему геймификации
+						.data__item
+							.data__head
+								.data__icon
+									img(src="uploads/star.png" alt="")
+								.data__title Результат:
+							.data__body
+								.data__text
+									ul
+										li Завершился 12-й поток
+										li Доходимость до конца курса 81%
+										li Получены успешные кейсы и позитивные отзывы
+
+			.cases__btn-more.button.--md.--bg-black
+				.button__text Посмотреть еще
+				.button__icon
+					img(src="uploads/arrow.svg" alt="")
+
+	.reviews
+		.case
+			.reviews__title #[strong отзывы] О НАШЕЙ РАБОТЕ
+			.reviews__slider
+				.reviews__wrap.swiper
+					.reviews__list.swiper-wrapper
+						a.reviews__item.swiper-slide(href="javascript:;" data-src="uploads/review-1.jpg" data-fancybox="")
+							img(src="uploads/review-1.jpg" alt="")
+					.reviews__arrow.swiper-button-prev
+						img(src="uploads/arrow.svg")
+					.reviews__arrow.swiper-button-next
+						img(src="uploads/arrow.svg")
+				.reviews__pagination.swiper-pagination
+
+
+	.order
+		.case
+			.order__title.h3 Оставить заявку на консультацию
+			.order__subtitle На консультации обсудим ваши задачи и подробно расскажем о технологии нашей работы
+			form.order__form
+				.order__field.field.--md.--b-white.--round.--phone.--required
+					.field__wrap
+						input.field__area(type="tel" name="phone" placeholder="Номер Телефона")
+				button.order__btn.button.--md.--bg-gold
+					.button__text Оставить заявку
+				.order__policy *Нажимая на кнопку, Вы даете согласие <br>на обработку своих персональных данных
+
+		.order__bg
+			img(src="uploads/animation.gif" alt="")

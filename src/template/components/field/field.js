@@ -21,30 +21,10 @@ class Field {
       this.element.classList.add(Field.classFilled);
     }
 
-    this.addClassTag();
-    this.movePlaceholder();
     this.onFocus();
     this.onInput();
   }
 
-  addClassTag() {
-    this.element.classList.add('--' + this.area.tagName.toLowerCase());
-  }
-
-  movePlaceholder() {
-    if (this.area.placeholder) {
-      let elPlaceholder = this.element.querySelector('.field__placeholder');
-
-      if (!elPlaceholder) {
-        elPlaceholder = document.createElement('div');
-        elPlaceholder.className = 'field__placeholder';
-        this.area.after(elPlaceholder);
-      }
-
-      elPlaceholder.innerText = this.area.placeholder;
-      this.area.placeholder = '';
-    }
-  }
 
   onFocus() {
     this.element.addEventListener('click', () => {

@@ -1,27 +1,5 @@
 @import ../../sass/vars
 
-@mixin filedSize($h, $fz, $padding, $hArea, $hAreaLh: 1.4)
-	.field
-		&__placeholder
-			font-size: $fz
-			padding-left: $padding
-			padding-right: $padding
-	&.--textarea
-		.field
-			&__placeholder
-				line-height: $hAreaLh
-				padding-top: ($padding - 2)
-	input.field__area
-		font-size: $fz
-		height: $h
-		padding-left: $padding
-		padding-right: $padding
-	textarea.field__area
-		font-size: $fz
-		line-height: $hAreaLh
-		height: $hArea
-		padding: ($padding - 2) $padding ($padding - 2) $padding
-
 .field
 	&__wrap
 		position: relative
@@ -34,50 +12,48 @@
 		overflow: hidden
 		resize: none
 		transition: $t
+		font-weight: 300
 		&::placeholder
-			opacity: 0
-	&__placeholder
-		position: absolute
-		left: 0
-		right: 0
-		transition: opacity $t
-	&__message
-		display: none
-		color: #f00
-	&.--input
-		.field
-			&__placeholder
-				top: 50%
-				transform: translateY(-50%)
-	&.--textarea
-		.field
-			&__placeholder
-				top: 0
+			opacity: 1
+			color: #AEACB4
 
-	&.--xs
-		@include filedSize(46px, 12px, 10px, 100px)
-	&.--sm
-		@include filedSize(50px, 14px, 10px, 80px)
 	&.--md
-		@include filedSize(56px, $fzMain, 18px, 120px)
-	&.--lg
-		@include filedSize(62px, 18px, 25px, 160px)
-				
+		.field
+			&__area
+				font-size: 16px
+				height: 45px
+				padding-left: 30px
+				padding-right: 30px
+
+	&.--lgg
+		.field
+			&__area
+				font-size: 23px
+				height: 65px
+				padding-left: 36px
+				padding-right: 36px
 	&.--b-gray
 		.field
 			&__area
-				border: 1px solid $c-lines
-				border-radius: $radius
-	
-	&.--focus, &.--filled
+				border: 2px solid #AEACB4
+
+	&.--b-white
 		.field
-			&__placeholder
-				opacity: 0
-		
+			&__area
+				color: #fff
+				border: 2px solid #fff
+				background: rgba(255, 255, 255, 0.35)
+				&::placeholder
+					opacity: 1
+					color: #fff
+
+	&.--round
+		.field
+			&__area
+				border-radius: 50px
 	&.--error
 		.field
 			&__area
 				border-color: #f00
 			&__message
 				display: block
-				

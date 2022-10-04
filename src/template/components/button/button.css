@@ -7,7 +7,7 @@
   text-align: center;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-family: "Museo Sans Cyrl", sans-serif;
   overflow: hidden;
   border: none;
   background-color: transparent;
@@ -15,23 +15,34 @@
   outline: none;
   border-bottom: none;
 }
-.button.--b-gray {
-  border: 1px solid #eee;
-  border-radius: 5px;
+.button.--bg-gold {
+  background: #E8D6BF;
 }
-.button.--xs {
-  font-size: 12px;
-  min-height: 36px;
+.button.--bg-gold:hover {
+  background: #dbbe99;
 }
-.button.--sm {
-  font-size: 14px;
-  min-height: 40px;
+.button.--bg-black {
+  color: #fff;
+  background: #343434;
+}
+.button.--bg-black:hover {
+  background: #414141;
+}
+.button.--round {
+  border-radius: 50px;
 }
 .button.--md {
   font-size: 16px;
-  min-height: 46px;
+  height: 45px;
+  font-weight: 700;
 }
 .button.--lg {
-  font-size: 20px;
-  min-height: 60px;
+  font-size: 18px;
+  height: 50px;
+  font-weight: 700;
+}
+.button.--lgg {
+  font-size: 23px;
+  height: 65px;
+  font-weight: 700;
 }

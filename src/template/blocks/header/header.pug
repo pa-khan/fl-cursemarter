@@ -2,4 +2,29 @@ include ../../pug/vars
 
 header.header
 	.case
+		.header__wrap.row
+			.header__logo.logo
+				.logo__icon
+					img(src="uploads/logo.png" alt="")
+				.logo__text
+					.logo__title КурсМастер
+					.logo__desc Методическое агентство
+			.header__nav
+				ul
+					li
+						a(href="#audit") Аудит курса
+					li
+						a(href="#revision") Доработка курса
+					li
+						a(href="#scratch") Разработка курса с нуля
+			.header__socials.socials
+				.socials__list.row
+					a.socials__item(href="" target="_blank")
+						img(src="uploads/whatsapp-gray.png" alt="")
+						img(src="uploads/whatsapp-black.png" alt="")
+					a.socials__item(href="" target="_blank")
+						img(src="uploads/telegram-gray.png" alt="")
+						img(src="uploads/telegram-black.png" alt="")
+			.header__phone #[a(href="tel:+74994905750") 8 (499) 490-57-50]
+
 		

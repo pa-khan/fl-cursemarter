@@ -5,9 +5,9 @@
 
 @import ../components/button/button
 @import ../components/field/field
-@import ../components/check/check
-@import ../components/select/select
-@import ../components/popup/popup
+// @import ../components/check/check
+// @import ../components/select/select
+// @import ../components/popup/popup
 // @import ../components/tabs/tabs
 // @import ../components/popup/popup
 // @import ../components/slider/slider
@@ -17,3 +17,679 @@
 
 .overflow-disable
 	overflow: hidden
+
+.logo
+	display: flex
+	align-items: center
+	&__icon
+		width: 56px
+		margin-right: 23px
+	&__title
+		font-size: 21px
+		line-height: 25px
+		font-weight: 700
+		margin-bottom: 6px
+	&__desc
+		font-size: 18px
+		line-height: 22px
+		font-weight: 300
+
+.socials
+	&__item
+		width: 24px
+		height: 24px
+		position: relative
+		margin-right: 18px
+		&:last-child
+			margin-right: 0
+
+		img
+			transition: .3s
+			&:nth-of-type(2)
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+		&:hover
+			img
+				&:nth-of-type(1)
+					opacity: 0
+				&:nth-of-type(2)
+					opacity: 1
+
+.header
+	padding-top: 45px
+	&__wrap
+		align-items: center
+	&__nav
+		margin-left: auto
+		margin-right: auto
+		li
+			margin-right: 80px
+			&:last-child
+				margin-right: 0
+				max-width: 95px
+
+		a
+			font-size: 16px
+			line-height: 20px
+			&:hover
+				border-color: $black
+
+	&__phone
+		font-size: 19px
+		font-family: 'DIN Pro', sans-serif
+		margin-left: 20px
+
+.h1
+	font-size: 32px
+	line-height: 40px
+	font-weight: 900
+
+.h2
+	font-size: 40px
+	line-height: 46px
+	text-transform: uppercase
+	font-family: 'Roboto Condensed', sans-serif
+
+.h3
+	font-size: 32px
+	line-height: 42px
+	font-weight: 900
+
+.h4
+	font-size: 22px
+	line-height: 30px
+	font-weight: 700
+
+.desc
+	position: relative
+	font-size: 21px
+	line-height: 28px
+	font-weight: 700
+	padding-left: 30px
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		left: -4px
+		top: -7px
+		width: 9px
+		height: 9px
+		background: $black
+		border-radius: 50%
+	&::after
+		content: ''
+		position: absolute
+		top: -7px
+		bottom: -7px
+		left: 0
+		width: 1px
+		background: $black
+
+.intro
+	position: relative
+	overflow: hidden
+	&::before
+		pointer-events: none
+		z-index: 1
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: linear-gradient(180deg, rgba(217, 217, 217, 0) 56.48%, #FFFFFF 100%)
+
+	&__wrap
+		position: relative
+		padding-top: 150px
+		padding-bottom: 115px
+	&__content
+		z-index: 5
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		max-width: 480px
+	&__title
+		margin-bottom: 45px
+	&__form
+		display: flex
+		flex-wrap: wrap
+	&__field
+		width: 100%
+		max-width: 270px
+		margin-right: 16px
+	&__btn-submit
+		width: 100%
+		max-width: 180px
+	&__policy
+		margin-top: 14px
+		font-size: 13px
+		line-height: 13px
+		max-width: 260px
+		color: #AEACB4
+		font-weight: 300
+		font-family: 'DIN Pro', sans-serif
+
+	&__clients
+		margin-top: 60px
+
+	&__vadim
+		width: 270px
+		position: absolute
+		bottom: 0px
+		right: 280px
+	&__ruslan
+		width: 270px
+		position: absolute
+		bottom: -40px
+		right: 0
+	&__bg
+		width: 785px
+		z-index: -1
+		position: absolute
+		top: 70px
+		right: -70px
+
+.clients
+	&__title
+		padding-bottom: 7px
+		color: #737373
+		border-bottom: 1px solid $black
+		margin-bottom: 15px
+	&__list
+		align-items: center
+		margin-left: -15px
+		margin-right: -15px
+	&__item
+		display: flex
+		align-items: center
+		justify-content: center
+		max-width: 125px
+		height: 50px
+		margin-left: 15px
+		margin-right: 15px
+
+.whom
+	padding-top: 70px
+	padding-bottom: 85px
+	&__title
+		text-align: center
+		margin-bottom: 90px
+	&__list
+		padding-left: 70px
+		padding-right: 70px
+		justify-content: space-between
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		max-width: 415px
+	&__img
+		display: flex
+		align-items: center
+		height: 390px
+		margin-bottom: 75px
+	&__name
+		position: relative
+		text-align: center
+		color: #fff
+		background: $black
+		font-size: 21px
+		font-weight: 700
+		padding: 7px 50px
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 0
+		&::before
+			left: -24px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 0 0 39px 24px
+			border-color: transparent transparent $black transparent
+		&::after
+			right: -24px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 39px 24px 0 0
+			border-color: $black transparent transparent transparent
+
+.services
+	color: #fff
+	background: #000000
+	padding-top: 70px
+	padding-bottom: 70px
+	&__title
+		text-align: center
+		margin-bottom: 80px
+	&__list
+		margin: 0 -15px 30px
+	&__item
+		width: calc(100% / 3 - 30px)
+		margin: 0 15px 30px
+		text-align: center
+	&__icon
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 110px
+		height: 110px
+		padding: 28px
+		border-radius: 50%
+		background-color: #fff
+		box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.35)
+		margin: 0 auto 50px
+	&__name
+		margin-bottom: 30px
+	&__text
+		font-size: 18px
+		line-height: 30px
+
+.audit
+	padding-top: 70px
+	padding-bottom: 100px
+	.case
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__title
+		text-align: center
+		margin-bottom: 30px
+	&__desc
+		margin-bottom: 85px
+
+	&__steps
+		margin-bottom: 110px
+
+	&__btn-search
+		padding-left: 26px
+		padding-right: 26px
+		margin-top: 70px
+		.button
+			&__icon
+				position: relative
+				width: 26px
+				height: 26px
+				margin-left: 18px
+				img
+					transition: .5s
+					&:nth-of-type(2)
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						transform: rotate(-360deg) scale(0)
+		&:hover
+			.button
+				&__icon
+					img
+						&:nth-of-type(1)
+							transform: rotate(-360deg) scale(0)
+						&:nth-of-type(2)
+							transform: rotate(0deg) scale(1)
+
+.steps
+	width: 100%
+	&__title
+		text-align: center
+		margin-bottom: 70px
+	&__item
+		position: relative
+		width: calc(100% / 4)
+		padding-top: 120px
+		padding-bottom: 120px
+		&:nth-of-type(odd)
+			.steps
+				&__name
+					top: 0
+					align-items: flex-end
+		&:nth-of-type(even)
+			.steps
+				&__count
+					color: $black
+					background: #FFE6D3
+
+				&__name
+					bottom: 0
+		&:last-child
+			.steps
+				&__count
+					&::after
+						display: none
+
+	&__count
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 45px
+		height: 45px
+		font-size: 26px
+		line-height: 26px
+		font-weight: 300
+		color: #fff
+		background-color: $black
+		border-radius: 50%
+		padding-top: 2px
+		margin-left: auto
+		margin-right: auto
+		&:after
+			z-index: -1
+			content: ''
+			position: absolute
+			top: 50%
+			right: -280px
+			width: 280px
+			height: 1px
+			background: $black
+	&__name
+		display: flex
+		font-size: 18px
+		line-height: 24px
+		// width: 205px
+		height: 100px
+		white-space: nowrap
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+
+.result
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 100%
+	background: #EEEDF3
+	border-radius: 30px
+	padding: 25px 80px
+	&__title
+		text-align: center
+		padding-bottom: 14px
+		border-bottom: 1px solid $black
+		width: 100%
+		max-width: 390px
+		margin-bottom: 15px
+	&__wrap
+		font-size: 22px
+
+.consult
+	position: relative
+	text-align: center
+	color: #fff
+	padding-top: 55px
+	padding-bottom: 55px
+	&__title
+		margin-bottom: 14px
+	&__subtitle
+		font-size: 21px
+		margin-bottom: 25px
+	&__form
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	&__field, &__btn
+		max-width: 360px
+		width: 100%
+	&__field
+		margin-right: 100px
+
+	&__policy
+		margin-top: 22px
+		font-size: 20px
+		line-height: 20px
+		font-weight: 300
+		font-family: 'DIN Pro', sans-serif
+	&__bg
+		z-index: -1
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		&:not(.--animation)
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		&.--animation
+			background: #000
+			overflow: hidden
+			&::before
+				z-index: 1
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: rgba(52, 52, 52, 0.35)
+			img
+				&:nth-of-type(1)
+					width: 480px
+					height: 900px
+					position: absolute
+					top: 100px
+					left: 50%
+					margin-left: -370px
+					transform: translateX(-50%) rotate(165deg) scale(1.3)
+					max-width: none
+					max-height: none
+					object-fit: cover
+					filter: blur(3px)
+				&:nth-of-type(2)
+					width: 480px
+					height: 900px
+					position: absolute
+					top: 0px
+					left: 50%
+					margin-left: 300px
+					transform: translateX(-50%) rotate(0deg) scale(1.3)
+					max-width: none
+					max-height: none
+					object-fit: cover
+					filter: blur(3px)
+
+.revision
+	position: relative
+	padding-top: 70px
+	padding-bottom: 70px
+	.case
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__title
+		margin-bottom: 30px
+	&__desc
+		margin-bottom: 70px
+	&__do
+		margin-bottom: 100px
+	&__bg
+		z-index: -1
+		position: absolute
+		top: 0
+		left: 50%
+		width: 1670px
+		transform: translateX(-50%)
+
+.do
+	&__title
+		text-align: center
+		margin-bottom: 50px
+	&__list
+		margin-bottom: -65px
+	&__item
+		width: calc(100% / 3)
+		border-right: 1px solid $black
+		margin-bottom: 65px
+		text-align: center
+		padding-left: 15px
+		padding-right: 15px
+		&:nth-of-type(3n)
+			border-right: none
+
+	&__icon
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 20px
+		width: 110px
+		height: 110px
+		box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.8)
+		border-radius: 50%
+		background-color: $black
+		margin: 0 auto 30px
+	&__name
+		margin-bottom: 25px
+
+	&__text
+		font-size: 18px
+		line-height: 30px
+
+.scratch
+	padding-top: 70px
+	padding-bottom: 70px
+	.case
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__title
+		margin-bottom: 30px
+	&__desc
+		margin-bottom: 80px
+	&__list
+		margin-bottom: 110px
+	&__text
+		padding-left: 80px
+		margin-bottom: 65px
+
+.list
+	width: 100%
+	&__title
+		text-align: center
+		margin-bottom: 50px
+	&__elems
+		padding-left: 100px
+		padding-right: 100px
+	&__elem
+		display: flex
+		align-items: center
+		margin-bottom: 70px
+		&:last-child
+			margin-bottom: 0
+		&-count
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 46px
+			height: 46px
+			border-radius: 50%
+			color: #fff
+			box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.8)
+			background: $black
+			font-size: 30px
+			font-weight: 700
+			margin-right: 40px
+		&-text
+			font-size: 25px
+			font-weight: 700
+
+.text
+	display: flex
+	ul
+		flex-direction: column
+		width: calc(100% / 2)
+		margin-bottom: -23px
+	li
+		position: relative
+		font-size: 21px
+		line-height: 28px
+		margin-bottom: 23px
+		padding-left: 25px
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			width: 10px
+			height: 10px
+			background: $black
+			border-radius: 50%
+			transform: translateY(-50%)
+
+.we
+	position: relative
+	overflow: hidden
+	&::after
+		content: ''
+		position: absolute
+		top: 100px
+		left: 0
+		right: 0
+		bottom: 0
+		pointer-events: none
+		background: linear-gradient(180deg, rgba(217, 217, 217, 0) 48.67%, #FFFFFF 100%)
+	&__wrap
+		z-index: 1
+		position: relative
+		padding-top: 55px
+		padding-bottom: 55px
+		width: 100%
+		max-width: 545px
+		margin: 0 auto
+	&__title
+		text-align: center
+		margin-bottom: 60px
+	&__list
+		margin-bottom: -23px
+	&__item
+		width: calc(100% / 2)
+		text-align: center
+		margin-bottom: 30px
+	&__name
+		font-size: 21px
+		font-weight: 700
+		line-height: 25px
+		margin-bottom: 7px
+		strong
+			font-size: 32px
+			line-height: 34px
+	&__text
+		font-size: 18px
+		line-height: 24px
+		width: 100%
+		max-width: 215px
+		margin-left: auto
+		margin-right: auto
+	&__author
+		position: absolute
+		bottom: 0
+		&:nth-of-type(1)
+			left: 0
+			.we__author-name
+				margin-left: -20px
+		&:nth-of-type(2)
+			right: 0
+			margin-bottom: -40px
+		&-name
+			font-size: 21px
+			line-height: 30px
+			text-transform: uppercase
+			font-family: 'Roboto Condensed', sans-serif
+			text-align: center
+			margin-bottom: 20px
+		&-img
+			width: 300px
+
+.cases
+	padding-top: 75px
+	&__title
+		text-align: center
+		margin-bottom: 32pxc

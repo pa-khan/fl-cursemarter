@@ -16,18 +16,26 @@
 	transition: .3s
 	outline: none
 	border-bottom: none
-	&.--b-gray
-		border: 1px solid $c-lines
-		border-radius: $radius
-	&.--xs
-		font-size: 12px
-		min-height: 36px
-	&.--sm
-		font-size: 14px
-		min-height: 40px
+	&.--bg-gold
+		background: #E8D6BF
+		&:hover
+			background: darken(#E8D6BF, 10%)
+	&.--bg-black
+		color: #fff
+		background: $black
+		&:hover
+			background: lighten($black, 5%)
+	&.--round
+		border-radius: 50px
 	&.--md
 		font-size: $fzMain
-		min-height: 46px
+		height: 45px
+		font-weight: 700
 	&.--lg
-		font-size: 20px
-		min-height: 60px
+		font-size: 18px
+		height: 50px
+		font-weight: 700
+	&.--lgg
+		font-size: 23px
+		height: 65px
+		font-weight: 700
