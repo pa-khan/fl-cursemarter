@@ -1075,6 +1075,7 @@
     line-height: 26px;
   }
 
+<<<<<<< HEAD
   .desc {
     padding-left: 17px;
   }
@@ -1358,6 +1359,22 @@
   .cases__title {
     padding: 0 40px;
   }
+=======
+  .whom__title {
+    margin-bottom: 35px;
+  }
+  .whom__item {
+    max-width: 50%;
+  }
+  .whom__img {
+    height: 160px;
+  }
+  .whom__name {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+>>>>>>> c63e163a1b72e9e4b3710731bc24caacd3cf19e1
   .cases__img {
     height: 150px;
     border-radius: 10px;
@@ -1492,5 +1509,25 @@
   }
   .footer__policy {
     line-height: 14px;
+  }
+
+  .services__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .services__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .services__name {
+    max-width: calc(100% - 45px);
+    text-align: left;
+    font-size: 20px;
+    padding-left: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .we__authors {
+    gap: 0px;
   }
 }
