@@ -91,3 +91,8 @@
     font-size: 18px;
   }
 }
+@media screen and (max-width: 768px) {
+  .button.--lgg {
+    height: 55px;
+  }
+}

@@ -72,8 +72,20 @@
 
 @media screen and (max-width: 768px)
 	.field
+		&.--b-white
+			.field
+				&__area
+					color: #AEACB4
+					background: #fff
+					&::placeholder
+						color: #AEACB4
 		&.--b-gray
 			.field
 				&__area
 					border-width: 1px
 					background: #fff
+		&.--lgg
+			.field
+				&__area
+					height: 55px
+					font-size: 16px

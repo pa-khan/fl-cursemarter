@@ -438,6 +438,19 @@
     font-size: 26px
     line-height: 32px
 
+  .h3
+    font-size: 24px
+    line-height: 32px
+
+  .h4
+    font-size: 22px
+
+  .desc
+    font-size: 16px
+    line-height: 24px
+    &:after
+      height: calc( 100% + 6px )
+
   .intro
     &:before
       display: none
@@ -470,3 +483,170 @@
     &__title
       text-align: center
       border-bottom: none
+
+  .whom
+    padding-top: 40px
+    &__item
+      max-width: 250px
+    &__name
+      font-size: 18px
+      &:before
+        border-width: 0 0 32px 24px
+      &:after
+        border-width: 32px 24px 0 0
+    &__img
+      height: 250px
+
+  .services
+    &__title
+      margin-bottom: 40px
+    &__item
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+    &__icon
+      width: 60px
+      height: 60px
+      margin: 0
+      img
+        width: 25px
+        max-width: none
+        max-height: none
+    &__name
+      padding-top: 16px
+      padding-left: 20px
+    &__text
+      font-size: 15px
+      line-height: 26px
+      margin-top: 20px
+
+  .audit
+    padding-top: 50px
+    &__btn-search
+      display: none
+
+  .steps
+    &__title
+      display: none
+    &__list
+      margin-left: 0
+      max-width: 280px
+      margin-left: auto
+      margin-right: auto
+      flex-direction: column
+    &__item
+      width: 100%
+      padding: 0
+      margin-bottom: 50px
+      margin-left: 0
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      &:last-of-type
+        margin-bottom: 0
+    &__count
+      order: 1
+      margin: 0
+      &:after
+        width: 1px
+        height: 100px
+        left: 50%
+        transform: translateX(-50%)
+        right: auto
+    &__name
+      order: 2
+      left: 0
+      margin-left: 0
+      height: auto
+      width: calc( 100% - 45px )
+      padding-left: 32px
+      white-space: normal
+      position: relative
+
+  .result
+    padding: 25px 40px 35px
+    &__wrap
+      font-size: 16px
+      line-height: 24px
+
+  .consult
+    &__subtitle
+      line-height: 24px
+      padding: 0 40px
+    &__form
+      max-width: 350px
+      margin-left: auto
+      margin-right: auto
+    &__field, &__btn
+      max-width: 100%
+    &__field
+      margin-right: 0
+      margin-bottom: 15px
+    &__policy
+      font-size: 13px
+      margin-top: 15px
+    &__bg
+      &.--animation
+        img
+          &:nth-of-type(1)
+            height: 480px
+          &:nth-of-type(2)
+            height: 480px
+
+  .do
+    &__title
+      display: none
+    &__item
+      padding-top: 30px
+      padding-bottom: 30px
+    &__icon
+      width: 70px
+      height: 70px
+    &__name
+      font-size: 18px
+      line-height: 24px
+
+  .scratch
+    &__list
+      max-width: 400px
+    &__text
+      max-width: 400px
+      margin-bottom: 40px
+
+  .list
+    &__title
+      padding-bottom: 20px
+      border-bottom: 1px solid $black
+    &__elem
+      &-count
+        width: 40px
+        min-width: 40px
+        height: 38px
+      &-text
+        font-size: 16px
+
+  .text
+    flex-direction: column
+    justify-content: flex-start
+    ul
+      width: 100%
+      margin-bottom: 0
+    li
+      br
+        display: none
+
+  .we
+    &__item
+      &:last-of-type
+        .we
+          &__name
+            strong
+              font-size: 22px
+    &__name
+      font-size: 17px
+      strong
+        font-size: 28px
+    &__text
+      font-size: 14px
+      line-height: 20px

@@ -58,8 +58,19 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .field.--b-white .field__area {
+    color: #AEACB4;
+    background: #fff;
+  }
+  .field.--b-white .field__area::placeholder {
+    color: #AEACB4;
+  }
   .field.--b-gray .field__area {
     border-width: 1px;
     background: #fff;
+  }
+  .field.--lgg .field__area {
+    height: 55px;
+    font-size: 16px;
   }
 }
