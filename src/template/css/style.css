@@ -121,8 +121,8 @@ picture {
 
 img {
   display: block;
-  max-width: 100% !important;
-  max-height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 svg {
@@ -149,6 +149,26 @@ img, svg, path, circle, rect, line {
 .case .case {
   padding-left: 0;
   padding-right: 0;
+}
+@media screen and (max-width: 1280px) {
+  .case {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .case {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .case {
+    width: 560px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .case {
+    width: 100%;
+  }
 }
 
 .row {
@@ -227,6 +247,19 @@ img, svg, path, circle, rect, line {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1280px) {
+  .button.--lgg {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .button.--lg {
+    font-size: 16px;
+  }
+  .button.--lgg {
+    font-size: 18px;
+  }
+}
 .field__wrap {
   position: relative;
   cursor: text;
@@ -279,6 +312,22 @@ img, svg, path, circle, rect, line {
   display: block;
 }
 
+@media screen and (max-width: 1280px) {
+  .field.--lgg .field__area {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .field.--lgg .field__area {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .field.--b-gray .field__area {
+    border-width: 1px;
+    background: #fff;
+  }
+}
 .case {
   border-right: 1px solid red;
   border-left: 1px solid red;
@@ -595,7 +644,7 @@ img, svg, path, circle, rect, line {
   margin-bottom: 80px;
 }
 .services__list {
-  margin: 0 -15px 30px;
+  margin: 0 -15px -30px;
 }
 .services__item {
   width: calc(100% / 3 - 30px);
