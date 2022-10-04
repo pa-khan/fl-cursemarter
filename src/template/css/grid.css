@@ -10,6 +10,26 @@
   padding-left: 0;
   padding-right: 0;
 }
+@media screen and (max-width: 1280px) {
+  .case {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .case {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .case {
+    width: 560px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .case {
+    width: 100%;
+  }
+}
 
 .row {
   display: flex;
