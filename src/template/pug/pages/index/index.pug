@@ -94,7 +94,7 @@ block content
 				.result__title.h3 Результат работ
 				.result__wrap Узнаете, над чем нужно провести работу, чтобы сделать программу более эффективной, <br> повысить доходимость, LTV и NPS. Вы получите документы с подробным анализом <br> курса. Опираясь на них вы сможете провести доработку самостоятельно, или пригласить <br>специалистов для решения конкретных задач.
 
-			.audit__btn-search.button.--lg.--bg-black.--round
+			a.audit__btn-search.button.--lg.--bg-black.--round(href="#reviews")
 				.button__text Найдите своих коллег, которые заказывали аудит
 				.button__icon
 					img(src="uploads/magniffic-glass-bold.svg" alt="")
@@ -243,53 +243,61 @@ block content
 		.case
 			.cases__title.h2 КОМУ УЖЕ РАЗРАБОТАЛИ КУРС
 			.cases__list
-				.cases__item
-					.cases__img
-						img(src="uploads/school-prod-poster.jpg" alt="")
-					.cases__data.data
-						.data__item.--full
-							.data__head
-								.data__icon
-								.data__title.--bb Услуга:
-							.data__body
-								.data__text
-									p Доработка курса (7-й, 8-й, 9-й, 10-й, 11-й и 12-й поток)
-						.data__item
-							.data__head
-								.data__icon
-									img(src="uploads/tools.png" alt="")
-								.data__title Что сделали:
-							.data__body
-								.data__text
-									ul
-										li Доработали структуру
-										li Переработали практические задания, разработали новые
-										li Доработали систему геймификации
-						.data__item
-							.data__head
-								.data__icon
-									img(src="uploads/star.png" alt="")
-								.data__title Результат:
-							.data__body
-								.data__text
-									ul
-										li Завершился 12-й поток
-										li Доходимость до конца курса 81%
-										li Получены успешные кейсы и позитивные отзывы
+				mixin casesItem
+					.cases__item
+						.cases__img
+							img(src="uploads/school-prod-poster.jpg" alt="")
+						.cases__data.data
+							.data__item.--full
+								.data__head
+									.data__icon
+									.data__title.--bb Услуга:
+								.data__body
+									.data__text
+										p Доработка курса (7-й, 8-й, 9-й, 10-й, 11-й и 12-й поток)
+							.data__item
+								.data__head
+									.data__icon
+										img(src="uploads/tools.png" alt="")
+									.data__title Что сделали:
+								.data__body
+									.data__text
+										ul
+											li Доработали структуру
+											li Переработали практические задания, разработали новые
+											li Доработали систему геймификации
+							.data__item
+								.data__head
+									.data__icon
+										img(src="uploads/star.png" alt="")
+									.data__title Результат:
+								.data__body
+									.data__text
+										ul
+											li Завершился 12-й поток
+											li Доходимость до конца курса 81%
+											li Получены успешные кейсы и позитивные отзывы
 
-			.cases__btn-more.button.--md.--bg-black
+				+casesItem
+				+casesItem
+				+casesItem
+			.cases__btn-more.button.--md.--bg-black.--round
 				.button__text Посмотреть еще
 				.button__icon
 					img(src="uploads/arrow.svg" alt="")
 
-	.reviews
+	.reviews#reviews
 		.case
 			.reviews__title #[strong отзывы] О НАШЕЙ РАБОТЕ
 			.reviews__slider
 				.reviews__wrap.swiper
 					.reviews__list.swiper-wrapper
-						a.reviews__item.swiper-slide(href="javascript:;" data-src="uploads/review-1.jpg" data-fancybox="")
-							img(src="uploads/review-1.jpg" alt="")
+						.reviews__item.swiper-slide
+							.reviews__img(data-src="https://www.youtube.com/watch?v=Z5GK0o7bCC4" data-fancybox="")
+								img(src="uploads/review-1.jpg" alt="")
+						.reviews__item.swiper-slide
+							.reviews__img(data-src="https://www.youtube.com/watch?v=Z5GK0o7bCC4" data-fancybox="")
+								img(src="uploads/review-1.jpg" alt="")
 					.reviews__arrow.swiper-button-prev
 						img(src="uploads/arrow.svg")
 					.reviews__arrow.swiper-button-next
@@ -299,15 +307,16 @@ block content
 
 	.order
 		.case
-			.order__title.h3 Оставить заявку на консультацию
-			.order__subtitle На консультации обсудим ваши задачи и подробно расскажем о технологии нашей работы
-			form.order__form
-				.order__field.field.--md.--b-white.--round.--phone.--required
-					.field__wrap
-						input.field__area(type="tel" name="phone" placeholder="Номер Телефона")
-				button.order__btn.button.--md.--bg-gold
-					.button__text Оставить заявку
-				.order__policy *Нажимая на кнопку, Вы даете согласие <br>на обработку своих персональных данных
+			.order__wrap
+				.order__title.h3 Оставить заявку на консультацию
+				.order__subtitle На консультации обсудим ваши задачи и подробно расскажем о технологии нашей работы
+				form.order__form
+					.order__field.field.--lgg.--b-white.--round.--phone.--required
+						.field__wrap
+							input.field__area(type="tel" name="phone" placeholder="Номер Телефона")
+					button.order__btn.button.--lgg.--bg-gold.--round
+						.button__text Оставить заявку
+					.order__policy *Нажимая на кнопку, Вы даете согласие <br>на обработку своих персональных данных
 
 		.order__bg
 			img(src="uploads/animation.gif" alt="")

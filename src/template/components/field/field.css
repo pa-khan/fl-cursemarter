@@ -44,8 +44,5 @@
   border-radius: 50px;
 }
 .field.--error .field__area {
-  border-color: #f00;
-}
-.field.--error .field__message {
-  display: block;
+  border-color: #f00 !important;
 }
