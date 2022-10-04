@@ -680,6 +680,8 @@ img, svg, path, circle, rect, line {
   text-align: center;
 }
 .services__icon {
+  z-index: 1;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -687,9 +689,23 @@ img, svg, path, circle, rect, line {
   height: 110px;
   padding: 28px;
   border-radius: 50%;
-  background-color: #fff;
-  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.35);
   margin: 0 auto 50px;
+}
+.services__icon::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.35);
+  background: #fff;
+  transition: 0.3s;
+}
+.services__icon:hover::before {
+  transform: scale(1.15);
 }
 .services__name {
   margin-bottom: 30px;
@@ -966,16 +982,31 @@ img, svg, path, circle, rect, line {
   border-right: none;
 }
 .do__icon {
+  z-index: 1;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 28px;
   width: 110px;
   height: 110px;
+  margin: 0 auto 30px;
+}
+.do__icon::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   background-color: #343434;
-  margin: 0 auto 30px;
+  transition: 0.3s;
+}
+.do__icon:hover::before {
+  transform: scale(1.15);
 }
 .do__name {
   margin-bottom: 25px;
@@ -1016,8 +1047,8 @@ img, svg, path, circle, rect, line {
   margin-bottom: 50px;
 }
 .list__elems {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 70px;
+  padding-right: 50px;
 }
 .list__elem {
   display: flex;
@@ -1028,18 +1059,36 @@ img, svg, path, circle, rect, line {
   margin-bottom: 0;
 }
 .list__elem-count {
+  z-index: 1;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 46px;
+  min-width: 46px;
+  max-width: 46px;
   height: 46px;
   border-radius: 50%;
   color: #fff;
-  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.8);
-  background: #343434;
   font-size: 30px;
   font-weight: 700;
   margin-right: 40px;
+}
+.list__elem-count::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.8);
+  background: #343434;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.list__elem-count:hover::before {
+  transform: scale(1.15);
 }
 .list__elem-text {
   font-size: 25px;
