@@ -181,6 +181,20 @@
     &__btn-more
       margin-top: 10px
 
+  .reviews
+    &__img
+      max-width: 730px
+    &__arrow
+      &.swiper-button-prev
+        left: 0
+      &.swiper-button-next
+        right: 0
+
+  .order
+    &__bg
+      img
+        margin-left: -330px
+
   .data
     margin-bottom: -40px
     &__item
@@ -331,6 +345,15 @@
       max-width: 320px
     &__policy
       font-size: 15px
+    &__bg
+      &.--animation
+        img
+          &:nth-of-type(1)
+            top: -20px
+            height: 600px
+          &:nth-of-type(2)
+            top: -80px
+            height: 600px
 
   .revision
     padding-top: 60px
@@ -428,6 +451,54 @@
           margin-left: auto
           margin-right: auto
 
+  .data
+    &__text
+      font-size: 16px
+
+  .reviews
+    &__title
+      font-size: 32px
+      strong
+        font-size: 50px
+    &__img
+      max-width: 520px
+    &__arrow
+      width: 60px
+      height: 60px
+      img
+        width: 20px
+    &__pagination
+      .swiper-pagination-bullet
+        width: 12px
+        height: 12px
+
+  .order
+    &__wrap
+      margin-right: auto
+    &__policy
+      font-size: 14px
+    &__bg
+      img
+        top: 100px
+        margin-left: 0
+      &:before
+        z-index: 1
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.75)
+        content: ""
+        position: absolute
+
+  .footer
+    &__title
+      font-size: 20px
+    &__phone
+      font-size: 20px
+    &__policy
+      max-width: 400px
+      font-size: 16px
+      line-height: 22px
+
 @media screen and (max-width: 768px)
   .logo
     &__icon
@@ -498,7 +569,6 @@
       text-align: center
       border-bottom: none
 
-<<<<<<< HEAD
   .whom
     padding-top: 40px
     &__item
@@ -563,6 +633,7 @@
     &__count
       order: 1
       margin: 0
+      font-size: 22px
       &:after
         width: 1px
         height: 100px
@@ -618,6 +689,10 @@
     &__icon
       width: 70px
       height: 70px
+      img
+        width: 30px
+        max-width: none
+        max-height: none
     &__name
       font-size: 18px
       line-height: 24px
@@ -665,7 +740,6 @@
     &__text
       font-size: 14px
       line-height: 20px
-=======
   .cases
     &__img
       height: 250px
@@ -693,26 +767,20 @@
   .reviews
     padding-bottom: 50px
     &__title
-      font-size: 32px
+      font-size: 30px
       margin-bottom: 25px
       strong
         font-size: 40px
-        display: block
-    &__wrap
-      overflow: visible
     &__list
       // overflow: hidden
     &__img
       height: 280px
+      max-width: 380px
     &__arrow
       width: 40px
       height: 40px
       padding: 12px
       margin-top: -20px
-      &.swiper-button-prev
-        left: -10px
-      &.swiper-button-next
-        right: -10px
     &__pagination
       .swiper-pagination-bullet
         width: 10px
@@ -732,6 +800,7 @@
     &__policy
       font-size: 14px
       line-height: 21px
+      max-width: 350px
 
   .modal
     padding: 20px !important
@@ -739,14 +808,83 @@
       font-size: 21px
       margin-bottom: 15px
 
-@media screen and (max-width: 500px)
-  .cases
+@media screen and (max-width: 580px)
+  .h3
+    font-size: 22px
+    line-height: 28px
+
+  .whom
+    &__item
+      max-width: 200px
     &__img
       height: 200px
+    &__name
+      font-size: 16px
+      &:before
+        border-width: 0 0 29px 24px
+      &:after
+        border-width: 29px 24px 0 0
 
-@media screen and (max-width: 450px)
+  .services
+    &__icon
+      width: 45px
+      height: 45px
+      padding: 5px
+      img
+        width: 20px
+    &__name
+      padding-top: 10px
+    &__text
+      font-size: 14px
+      line-height: 22px
+
+  .do
+    &__icon
+      width: 60px
+      height: 60px
+      img
+        width: 25px
+    &__name
+      font-size: 16px
+      line-height: 22px
+    &__text
+      font-size: 14px
+      line-height: 22px
+
+  .result
+    &__wrap
+      font-size: 14px
+      line-height: 22px
+
+  .we
+    &__title
+      margin-bottom: 220px
+    &__authors
+      gap: 30px
+    &__author
+      &-name
+        text-align: center
+        margin-left: 0 !important
+      &-img
+        width: 110px
+        height: 110px
+        margin-left: auto
+        margin-right: auto
+
+  .reviews
+    &__img
+      max-width: 310px
+
+  .cases
+    &__img
+      height: 210px
+
+@media screen and (max-width: 470px)
+  .h1
+    font-size: 22px
+    line-height: 26px
+
   .cases
     &__img
       height: 150px
       border-radius: 10px
->>>>>>> 47fc8dd66790e17de09cf3a75be3898781284dd9

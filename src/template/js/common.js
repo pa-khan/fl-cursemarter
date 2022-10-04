@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		$reviews.$pagination = $reviews.querySelector('.reviews__pagination');
 
 		new Swiper($reviews.$wrap, {
+			speed: 900,
 			loop: true,
 			navigation: {
 				nextEl: $reviews.$arrowNext,

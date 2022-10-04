@@ -1371,7 +1371,7 @@ img, svg, path, circle, rect, line {
   height: 70px;
   background: #343434;
   border-radius: 50%;
-  transition: 0.1s;
+  transition: 0.3s;
   margin-top: -35px;
 }
 .reviews__arrow:after {
