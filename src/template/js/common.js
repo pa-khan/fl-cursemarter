@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			pagination: {
 				el: $reviews.$pagination,
 				type: 'bullets',
+				clickable: true
 			}
 
 		});
