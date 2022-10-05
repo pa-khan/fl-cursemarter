@@ -201,9 +201,8 @@ block content
 				button.consult__btn.button.--lgg.--bg-gold.--round
 					.button__text Оставить заявку
 				.consult__policy *Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных
-		.consult__bg.--animation
-			img(src="uploads/animation.gif" alt="")
-			img(src="uploads/animation.gif" alt="")
+		.consult__bg
+			img(src="uploads/consult-2-bg.jpg" alt="")
 
 
 	.we
@@ -242,45 +241,49 @@ block content
 	.cases
 		.case
 			.cases__title.h2 КОМУ УЖЕ РАЗРАБОТАЛИ КУРС
-			.cases__list
-				mixin casesItem
-					.cases__item
-						.cases__img
-							img(src="uploads/school-prod-poster.jpg" alt="")
-						.cases__data.data
-							.data__item.--full
-								.data__head
-									.data__icon
-									.data__title.--bb Услуга:
-								.data__body
-									.data__text
-										p Доработка курса (7-й, 8-й, 9-й, 10-й, 11-й и 12-й поток)
-							.data__item
-								.data__head
-									.data__icon
-										img(src="uploads/tools.png" alt="")
-									.data__title Что сделали:
-								.data__body
-									.data__text
-										ul
-											li Доработали структуру
-											li Переработали практические задания, разработали новые
-											li Доработали систему геймификации
-							.data__item
-								.data__head
-									.data__icon
-										img(src="uploads/star.png" alt="")
-									.data__title Результат:
-								.data__body
-									.data__text
-										ul
-											li Завершился 12-й поток
-											li Доходимость до конца курса 81%
-											li Получены успешные кейсы и позитивные отзывы
 
-				+casesItem
-				+casesItem
-				+casesItem
+		.cases__list
+			mixin casesItem
+				.cases__item
+					.case
+						.cases__wrap
+							.cases__img
+								img(src="uploads/school-prod-poster.jpg" alt="")
+							.cases__data.data
+								.data__list
+									.data__item.--full
+										.data__head
+											.data__icon
+											.data__title.--bb Услуга:
+										.data__body
+											.data__text
+												p Доработка курса (7-й, 8-й, 9-й, 10-й, 11-й и 12-й поток)
+									.data__item
+										.data__head
+											.data__icon
+												img(src="uploads/tools.png" alt="")
+											.data__title Что сделали:
+										.data__body
+											.data__text
+												ul
+													li Доработали структуру
+													li Переработали практические задания, разработали новые
+													li Доработали систему геймификации
+									.data__item
+										.data__head
+											.data__icon
+												img(src="uploads/star.png" alt="")
+											.data__title Результат:
+										.data__body
+											.data__text
+												ul
+													li Завершился 12-й поток
+													li Доходимость до конца курса 81%
+													li Получены успешные кейсы и позитивные отзывы
+
+			+casesItem
+			+casesItem
+			+casesItem
 			.cases__btn-more.button.--md.--bg-black.--round
 				.button__text Посмотреть еще
 				.button__icon

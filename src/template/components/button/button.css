@@ -35,6 +35,10 @@
 .button.--bg-gold:hover {
   background: #dbbe99;
 }
+.button.--bg-gold:hover::before {
+  opacity: 0;
+  transition: 0.3s;
+}
 .button.--bg-black {
   color: #fff;
   background: #343434;

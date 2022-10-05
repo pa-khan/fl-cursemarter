@@ -212,9 +212,6 @@
     padding: 0 10px;
   }
 
-  .cases__item {
-    margin-bottom: 50px;
-  }
   .cases__data {
     padding-left: 0;
     padding-right: 0;
@@ -237,8 +234,8 @@
     margin-left: -330px;
   }
 
-  .data {
-    margin-bottom: -40px;
+  .data__list {
+    margin-bottom: -10px;
   }
   .data__item {
     margin-bottom: 40px;
@@ -926,6 +923,9 @@
     margin-bottom: 25px;
   }
 
+  .data__list {
+    margin-bottom: 0px;
+  }
   .data__item {
     width: 100%;
     margin-bottom: 20px;

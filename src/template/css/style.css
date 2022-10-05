@@ -94,8 +94,8 @@ a {
   border-bottom: 1px solid transparent;
 }
 
-input, textarea, button {
-  outline: none;
+input, textarea, button, a {
+  outline: none !important;
   appearance: none;
 }
 
@@ -234,6 +234,10 @@ img, svg, path, circle, rect, line {
 }
 .button.--bg-gold:hover {
   background: #dbbe99;
+}
+.button.--bg-gold:hover::before {
+  opacity: 0;
+  transition: 0.3s;
 }
 .button.--bg-black {
   color: #fff;
@@ -1242,18 +1246,25 @@ img, svg, path, circle, rect, line {
 }
 .cases__list {
   width: 100%;
-  max-width: 860px;
-  margin: 0 auto;
 }
 .cases__item {
   display: none;
-  margin-bottom: 90px;
+  padding-top: 45px;
+  border-top: 1px solid #eee;
 }
 .cases__item.--show {
   display: block;
 }
+.cases__item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
 .cases__item:last-child {
-  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.cases__wrap {
+  max-width: 860px;
+  margin: 0 auto;
 }
 .cases__img {
   width: 100%;
@@ -1299,10 +1310,10 @@ img, svg, path, circle, rect, line {
   transform: translate(-50%, -50%) rotate(90deg) scale(1);
 }
 
-.data {
+.data__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -70px;
+  margin-bottom: -30px;
 }
 .data__item {
   width: 50%;

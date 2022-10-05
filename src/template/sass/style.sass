@@ -737,16 +737,21 @@
 		margin-bottom: 32px
 	&__list
 		width: 100%
-		max-width: 860px
-		margin: 0 auto
 	&__item
 		display: none
-		margin-bottom: 90px
+		padding-top: 45px
+		border-top: 1px solid #eee
 		&.--show
 			display: block
+		&:first-child
+			padding-top: 0
+			border-top: none
 		&:last-child
-			margin-bottom: 0
+			padding-bottom: 0
 
+	&__wrap
+		max-width: 860px
+		margin: 0 auto
 	&__img
 		width: 100%
 		height: 335px
@@ -786,9 +791,10 @@
 					transform: translate(-50%, -50%) rotate(90deg) scale(1)
 
 .data
-	display: flex
-	flex-wrap: wrap
-	margin-bottom: -70px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: -30px
 	&__item
 		width: 50%
 		margin-bottom: 70px
