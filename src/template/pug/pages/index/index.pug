@@ -94,7 +94,7 @@ block content
 				.result__title.h3 Результат работ
 				.result__wrap Узнаете, над чем нужно провести работу, чтобы сделать программу более эффективной, <br> повысить доходимость, LTV и NPS. Вы получите документы с подробным анализом <br> курса. Опираясь на них вы сможете провести доработку самостоятельно, или пригласить <br>специалистов для решения конкретных задач.
 
-			a.audit__btn-search.button.--lg.--bg-black.--round(href="#reviews")
+			a.audit__btn-search.button.--lg.--bg-black.--round(href="javascript:;" data-src="#modal-audit" data-fancybox="")
 				.button__text Найдите своих коллег, которые заказывали аудит
 				.button__icon
 					img(src="uploads/magniffic-glass-bold.svg" alt="")
@@ -292,12 +292,17 @@ block content
 			.reviews__slider
 				.reviews__wrap.swiper
 					.reviews__list.swiper-wrapper
-						.reviews__item.swiper-slide
-							.reviews__img(data-src="https://www.youtube.com/watch?v=Z5GK0o7bCC4" data-fancybox="")
-								img(src="uploads/review-1.jpg" alt="")
-						.reviews__item.swiper-slide
-							.reviews__img(data-src="https://www.youtube.com/watch?v=Z5GK0o7bCC4" data-fancybox="")
-								img(src="uploads/review-1.jpg" alt="")
+						mixin reviewsItem(src = '')
+							.reviews__item.swiper-slide
+								.reviews__img(data-src="https://www.youtube.com/watch?v=" + src data-fancybox="")
+									img(src="https://img.youtube.com/vi/" + src + "/sddefault.jpg" alt="")
+						+reviewsItem('Z5GK0o7bCC4')
+						+reviewsItem('9Oze9tB6Zq0')
+						+reviewsItem('WM-aDc8SZsc')
+						+reviewsItem('obayDd3dUXo')
+						+reviewsItem('BXoHQ961Idc')
+						+reviewsItem('9N3ybZLsqK4')
+						+reviewsItem('vnuAiXCvTN0')
 					.reviews__arrow.swiper-button-prev
 						img(src="uploads/arrow.svg")
 					.reviews__arrow.swiper-button-next

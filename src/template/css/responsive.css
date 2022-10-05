@@ -615,6 +615,21 @@
     line-height: 22px;
   }
 }
+@media screen and (max-width: 992px) {
+  .adt__list {
+    margin-bottom: -20px;
+  }
+  .adt__item {
+    margin-bottom: 20px;
+  }
+  .adt__name {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .adt__name br {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .logo__icon {
     width: 35px;
@@ -978,11 +993,33 @@
   }
 
   .modal {
-    padding: 20px !important;
+    padding: 30px !important;
+    border-radius: 20px;
+  }
+  .modal.--sm {
+    max-width: 360px;
+  }
+  .modal__close {
+    display: none;
   }
   .modal__title {
     font-size: 21px;
     margin-bottom: 15px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 20px;
+  }
+  .modal__field {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .modal__btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .fancybox__content > .carousel__button.is-close {
+    display: block;
   }
 }
 @media screen and (max-width: 580px) {
@@ -1068,6 +1105,20 @@
   .cases__img {
     height: 210px;
   }
+
+  .adt {
+    padding-bottom: 0;
+  }
+  .adt__list {
+    margin-bottom: -10px;
+  }
+  .adt__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .adt__name {
+    padding-left: 14px;
+  }
 }
 @media screen and (max-width: 470px) {
   .h1 {
@@ -1075,7 +1126,6 @@
     line-height: 26px;
   }
 
-<<<<<<< HEAD
   .desc {
     padding-left: 17px;
   }
@@ -1359,22 +1409,6 @@
   .cases__title {
     padding: 0 40px;
   }
-=======
-  .whom__title {
-    margin-bottom: 35px;
-  }
-  .whom__item {
-    max-width: 50%;
-  }
-  .whom__img {
-    height: 160px;
-  }
-  .whom__name {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
->>>>>>> c63e163a1b72e9e4b3710731bc24caacd3cf19e1
   .cases__img {
     height: 150px;
     border-radius: 10px;
@@ -1509,25 +1543,5 @@
   }
   .footer__policy {
     line-height: 14px;
-  }
-
-  .services__list {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .services__item {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .services__name {
-    max-width: calc(100% - 45px);
-    text-align: left;
-    font-size: 20px;
-    padding-left: 14px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .we__authors {
-    gap: 0px;
   }
 }

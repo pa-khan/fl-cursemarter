@@ -90,6 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
+	const $modalCloseBtns = document.querySelectorAll('.modal__close');
+	if ($modalCloseBtns.length > 0) {
+		$modalCloseBtns.forEach(($btn) => {
+			$btn.addEventListener('click', () => {
+				Fancybox.close();
+			});
+
+		});
+	}
+
+
 	// VALIDATION
 	let validateForms = document.querySelectorAll('form');
 	if (validateForms) {

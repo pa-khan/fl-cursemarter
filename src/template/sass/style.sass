@@ -967,29 +967,95 @@
 
 .modal
 	display: none
+	position: relative
 	width: 100%
-	border-radius: 20px
+	border-radius: 50px
 	&.--sm
-		padding: 35px
-		max-width: 380px
+		padding: 85px 100px
+		max-width: 650px
 	&.--md
 		padding: 35px
 		max-width: 420px
 	&.--lg
 		padding: 35px
-		max-width: 992px
-	&.--thanks, &.--callback
-		text-align: center
+		max-width: 1110px
+	&.--policy
+		.modal
+			&__title
+				padding-top: 30px
+	&.--thanks
+		.modal
+			&__title
+				padding-top: 20px
+				padding-bottom: 20px
+	&.--audit
+		.modal
+			&__title
+				padding-top: 30px
+				padding-bottom: 30px
+	&__close
+		position: absolute
+		width: 25px
+		height: 25px
+		top: 30px
+		right: 30px
+		cursor: pointer
+		svg
+			width: 100%
+			height: auto
+		&:hover
+			rect
+				fill: $black
 	&__title
-		font-size: 24px
-		font-weight: 700
-		margin-bottom: 20px
+		font-size: 32px
+		font-weight: 900
+		text-align: center
+		margin-bottom: 35px
+		&:last-child
+			margin-bottom: 0
+
 	&__text
 		a
 			border-color: $black
 			&:hover
 				border-color: transparent
+	&__form
+		display: flex
+		flex-wrap: wrap
 	&__field
-		margin-bottom: 10px
+		width: 61%
+		// margin-bottom: 10px
 	&__btn
-		width: 100%
+		width: 35%
+		margin-left: 4%
+	&__policy
+		margin-top: 13px
+		text-align: left
+		font-size: 13px
+		line-height: 13px
+		max-width: 260px
+		color: #AEACB4
+		font-weight: 300
+		font-family: 'DIN Pro', sans-serif
+
+.adt
+	padding-bottom: 40px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: -40px
+	&__item
+		display: flex
+		align-items: center
+		width: calc(100% / 2)
+		margin-bottom: 40px
+	&__img
+		width: 45px
+	&__name
+		width: calc(100% - 45px)
+		padding-left: 25px
+		line-height: 16px
+		font-weight: 700
+
+.fancybox__content>.carousel__button.is-close
+	display: none

@@ -380,7 +380,6 @@ img, svg, path, circle, rect, line {
     font-size: 16px;
   }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 470px) {
   .field.--md .field__area {
     font-size: 14px;
@@ -395,8 +394,6 @@ img, svg, path, circle, rect, line {
     padding-right: 20px;
   }
 }
-=======
->>>>>>> c63e163a1b72e9e4b3710731bc24caacd3cf19e1
 .tal {
   text-align-last: left;
 }
@@ -1526,12 +1523,13 @@ img, svg, path, circle, rect, line {
 
 .modal {
   display: none;
+  position: relative;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .modal.--sm {
-  padding: 35px;
-  max-width: 380px;
+  padding: 85px 100px;
+  max-width: 650px;
 }
 .modal.--md {
   padding: 35px;
@@ -1539,15 +1537,42 @@ img, svg, path, circle, rect, line {
 }
 .modal.--lg {
   padding: 35px;
-  max-width: 992px;
+  max-width: 1110px;
 }
-.modal.--thanks, .modal.--callback {
-  text-align: center;
+.modal.--policy .modal__title {
+  padding-top: 30px;
+}
+.modal.--thanks .modal__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.modal.--audit .modal__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.modal__close {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.modal__close svg {
+  width: 100%;
+  height: auto;
+}
+.modal__close:hover rect {
+  fill: #343434;
 }
 .modal__title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.modal__title:last-child {
+  margin-bottom: 0;
 }
 .modal__text a {
   border-color: #343434;
@@ -1555,9 +1580,52 @@ img, svg, path, circle, rect, line {
 .modal__text a:hover {
   border-color: transparent;
 }
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+}
 .modal__field {
-  margin-bottom: 10px;
+  width: 61%;
 }
 .modal__btn {
-  width: 100%;
+  width: 35%;
+  margin-left: 4%;
+}
+.modal__policy {
+  margin-top: 13px;
+  text-align: left;
+  font-size: 13px;
+  line-height: 13px;
+  max-width: 260px;
+  color: #AEACB4;
+  font-weight: 300;
+  font-family: "DIN Pro", sans-serif;
+}
+
+.adt {
+  padding-bottom: 40px;
+}
+.adt__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+}
+.adt__item {
+  display: flex;
+  align-items: center;
+  width: calc(100% / 2);
+  margin-bottom: 40px;
+}
+.adt__img {
+  width: 45px;
+}
+.adt__name {
+  width: calc(100% - 45px);
+  padding-left: 25px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.fancybox__content > .carousel__button.is-close {
+  display: none;
 }
