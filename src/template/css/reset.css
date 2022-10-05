@@ -45,8 +45,8 @@ a {
   border-bottom: 1px solid transparent;
 }
 
-input, textarea, button {
-  outline: none;
+input, textarea, button, a {
+  outline: none !important;
   appearance: none;
 }
 

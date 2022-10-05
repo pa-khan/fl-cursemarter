@@ -35,8 +35,14 @@
 .button.--bg-gold:hover {
   background: #dbbe99;
 }
+<<<<<<< HEAD
 .button.--bg-gold .button__text {
   color: #343434;
+=======
+.button.--bg-gold:hover::before {
+  opacity: 0;
+  transition: 0.3s;
+>>>>>>> 16ad5a011fb5d0bc1e94e071b170d535b749124c
 }
 .button.--bg-black {
   color: #fff;

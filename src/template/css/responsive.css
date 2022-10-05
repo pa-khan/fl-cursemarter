@@ -212,9 +212,6 @@
     padding: 0 10px;
   }
 
-  .cases__item {
-    margin-bottom: 50px;
-  }
   .cases__data {
     padding-left: 0;
     padding-right: 0;
@@ -237,8 +234,8 @@
     margin-left: -330px;
   }
 
-  .data {
-    margin-bottom: -40px;
+  .data__list {
+    margin-bottom: -10px;
   }
   .data__item {
     margin-bottom: 40px;
@@ -615,6 +612,21 @@
     line-height: 22px;
   }
 }
+@media screen and (max-width: 992px) {
+  .adt__list {
+    margin-bottom: -20px;
+  }
+  .adt__item {
+    margin-bottom: 20px;
+  }
+  .adt__name {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .adt__name br {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .logo__icon {
     width: 35px;
@@ -919,6 +931,9 @@
     margin-bottom: 25px;
   }
 
+  .data__list {
+    margin-bottom: 0px;
+  }
   .data__item {
     width: 100%;
     margin-bottom: 20px;
@@ -986,11 +1001,33 @@
   }
 
   .modal {
-    padding: 20px !important;
+    padding: 30px !important;
+    border-radius: 20px;
+  }
+  .modal.--sm {
+    max-width: 360px;
+  }
+  .modal__close {
+    display: none;
   }
   .modal__title {
     font-size: 21px;
     margin-bottom: 15px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 20px;
+  }
+  .modal__field {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .modal__btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .fancybox__content > .carousel__button.is-close {
+    display: block;
   }
 }
 @media screen and (max-width: 580px) {
@@ -1075,6 +1112,20 @@
 
   .cases__img {
     height: 210px;
+  }
+
+  .adt {
+    padding-bottom: 0;
+  }
+  .adt__list {
+    margin-bottom: -10px;
+  }
+  .adt__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .adt__name {
+    padding-left: 14px;
   }
 }
 @media screen and (max-width: 470px) {
