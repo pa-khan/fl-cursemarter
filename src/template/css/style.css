@@ -97,6 +97,8 @@ a {
 input, textarea, button, a {
   outline: none !important;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 var {
@@ -235,12 +237,12 @@ img, svg, path, circle, rect, line {
 .button.--bg-gold:hover {
   background: #dbbe99;
 }
-.button.--bg-gold .button__text {
-  color: #343434;
-}
-.button.--bg-gold .button::before {
+.button.--bg-gold:hover::before {
   opacity: 0;
   transition: 0.3s;
+}
+.button.--bg-gold .button__text {
+  color: #343434;
 }
 .button.--bg-black {
   color: #fff;

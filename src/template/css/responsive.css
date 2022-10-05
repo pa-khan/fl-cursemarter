@@ -392,6 +392,7 @@
   }
   .audit__btn-search .button__icon {
     width: 23px;
+    min-width: 23px;
     height: 23px;
   }
 
@@ -772,10 +773,6 @@
   .audit {
     padding-top: 50px;
   }
-  .audit__btn-search {
-    display: none;
-  }
-
   .steps__title {
     display: none;
   }

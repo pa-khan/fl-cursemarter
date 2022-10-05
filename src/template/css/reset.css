@@ -48,6 +48,8 @@ a {
 input, textarea, button, a {
   outline: none !important;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 var {
