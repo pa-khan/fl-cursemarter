@@ -1432,7 +1432,7 @@
   }
   .cases__btn-more {
     max-width: 270px;
-    margin-top: 80px;
+    margin-top: 20px;
   }
   .cases__btn-more.--md {
     height: 40px;

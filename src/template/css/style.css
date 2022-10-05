@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap");
 @font-face {
-  font-family: "Museo Sans Cyrl 500";
+  font-family: "Museo Sans Cyrl";
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-500.eot");
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/Museosanscyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl/Museosanscyrl-500.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-500.svg#Museosanscyrl-500") format("svg");
   font-weight: normal;
@@ -8,23 +8,23 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Museo Sans Cyrl 900";
+  font-family: "Museo Sans Cyrl";
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-900.eot");
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-900.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/Museosanscyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl/Museosanscyrl-900.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-900.svg#Museosanscyrl-900") format("svg");
-  font-weight: bold;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Museo Sans Cyrl 700";
+  font-family: "Museo Sans Cyrl";
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-700.eot");
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/Museosanscyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/Museosanscyrl-700.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-700.svg#Museosanscyrl-700") format("svg");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Museo Sans Cyrl 300";
+  font-family: "Museo Sans Cyrl";
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-300.eot");
   src: url("../fonts/MuseoSansCyrl/Museosanscyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/Museosanscyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/Museosanscyrl-300.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/Museosanscyrl-300.svg#Museosanscyrl-300") format("svg");
   font-weight: 300;
@@ -235,14 +235,12 @@ img, svg, path, circle, rect, line {
 .button.--bg-gold:hover {
   background: #dbbe99;
 }
-<<<<<<< HEAD
 .button.--bg-gold .button__text {
   color: #343434;
-=======
-.button.--bg-gold:hover::before {
+}
+.button.--bg-gold .button::before {
   opacity: 0;
   transition: 0.3s;
->>>>>>> 16ad5a011fb5d0bc1e94e071b170d535b749124c
 }
 .button.--bg-black {
   color: #fff;
@@ -1288,6 +1286,7 @@ img, svg, path, circle, rect, line {
 .cases__item {
   display: none;
   padding-top: 45px;
+  padding-bottom: 45px;
   border-top: 1px solid #eee;
 }
 .cases__item.--show {
@@ -1323,7 +1322,7 @@ img, svg, path, circle, rect, line {
 .cases__btn-more {
   width: 100%;
   max-width: 320px;
-  margin-top: 70px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1351,14 +1350,13 @@ img, svg, path, circle, rect, line {
 .data__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
 }
 .data__item {
-  width: 50%;
-  margin-bottom: 70px;
-}
-.data__item.--full {
   width: 100%;
+  margin-bottom: 40px;
+}
+.data__item:last-child {
+  margin-bottom: 0;
 }
 .data__head {
   display: flex;
