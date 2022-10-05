@@ -11,10 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
 			new Field(field);
 
 			if (field.classList.contains('--phone')) {
-				IMask(field.area, {
+				field.area.mask = IMask(field.area, {
 					mask: '+{7} (000) 000-00-00',
-					// lazy: false,
+					lazy: true
+				});
+				field.area.addEventListener('focusin', () => {
+					field.area.mask.updateOptions({
+						lazy: false
+					})
+				});
+				field.area.addEventListener('focusout', () => {
+					field.area.mask.updateOptions({
+						lazy: true
+					})
 				})
+			} else {
+				field.area.addEventListener('input', () => {
+				});
 			}
 		});
 	}
@@ -86,6 +99,30 @@ document.addEventListener('DOMContentLoaded', () => {
 					])
 				}
 			});
+		});
+	}
+
+	// UP BTN
+	document.addEventListener("scroll", upBtnScroll);
+	let upBtn = document.querySelector(".up");
+
+	function upBtnScroll() {
+		let scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		let ratio = 0.05;
+
+		if ((document.documentElement.scrollTop / scrollableHeight) > ratio) {
+			upBtn.classList.add('--show')
+		} else {
+			upBtn.classList.remove('--show')
+		}
+	}
+
+	upBtn.addEventListener("click", scrollToTop);
+
+	function scrollToTop() {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
 		});
 	}
 

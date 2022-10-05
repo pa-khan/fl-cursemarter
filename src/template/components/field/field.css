@@ -16,6 +16,9 @@
   opacity: 1;
   color: #AEACB4;
 }
+.field__area:focus::placeholder {
+  opacity: 0;
+}
 .field.--md .field__area {
   font-size: 16px;
   height: 45px;
