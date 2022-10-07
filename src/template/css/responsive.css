@@ -1167,6 +1167,7 @@
   }
 
   .up {
+    display: none !important;
     width: 45px;
     height: 45px;
   }
@@ -1239,14 +1240,18 @@
     margin: 0 0 45px;
   }
   .services__icon {
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
   }
   .services__icon img {
-    width: 14px;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
   .services__name {
     padding-top: 2px;
+    padding-left: 10px;
   }
   .services__text {
     margin-top: 0;
